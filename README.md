@@ -11,15 +11,73 @@
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+# Portefeuille Mobile (walletLaravel)
+
+Ce projet est une application de portefeuille mobile développée avec Laravel. Elle permet aux utilisateurs de gérer leurs transactions, consulter leur solde, et effectuer des opérations de dépôt et de retrait de fonds. Ce projet est conçu pour servir de base à une solution de gestion de portefeuille électronique, adaptée à l'écosystème mobile money.
+
+## Fonctionnalités principales
+
+- Création et gestion de comptes utilisateurs
+- Consultation du solde en temps réel
+- Historique des transactions (dépôts, retraits, transferts)
+- Sécurité et authentification des utilisateurs
+- Support multi-devises et multi-pays
+
+## Prérequis
+
+- PHP >= 8.1
+- Composer
+- MySQL ou autre base de données compatible
+- Node.js et npm (pour les assets front-end)
+
+## Installation
+
+1. Cloner le dépôt :
+	```bash
+	git clone https://github.com/vanotis720/momo-wallet.git
+	cd walletLaravel
+	```
+2. Installer les dépendances PHP :
+	```bash
+	composer install
+	```
+3. Copier le fichier d'environnement et configurer vos variables :
+	```bash
+	cp .env.example .env
+	# Modifier .env selon vos besoins
+	```
+4. Générer la clé d'application :
+	```bash
+	php artisan key:generate
+	```
+5. Exécuter les migrations :
+	```bash
+	php artisan migrate
+	```
+6. Installer les dépendances front-end :
+	```bash
+	npm install && npm run build
+	```
+7. Lancer le serveur de développement :
+	```bash
+	php artisan serve
+	```
+
+## Tests
+
+Pour exécuter les tests :
+```bash
+php artisan test
+```
+
+## Contribution
+
+Les contributions sont les bienvenues ! Veuillez ouvrir une issue ou soumettre une pull request.
+
+## Licence
+
+Ce projet est sous licence MIT.
 
 ## Learning Laravel
 
